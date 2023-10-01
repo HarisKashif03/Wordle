@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+    
+  </head>
+  <body>
+    <div class="allign_buttons">
+      <h1 id="title">Wordle</h1>
+      <label id="toggle1" class="darkm id">&#9681;</label>
+      <label id="toggle3" class="im id">&#9432;</label>
+      <label id="toggle2" class="hi id">&#63;</label>
+    
+    </div>
+    <hr>
+
+    <div class="board" id="delet">
+      <div id="x1" class="box"></div>
+      <div id="x2" class="box"></div>
+      <div id="x3" class="box"></div>
+      <div id="x4" class="box"></div>
+      
+      <div id="x5" class="box"></div>
+      <div id="x6" class="box"></div>
+      <div id="x7" class="box"></div>
+      <div id="x8" class="box"></div>
+
+      <div id="x9" class="box"></div>
+      <div id="x10" class="box"></div>
+      <div id="x11" class="box"></div>
+      <div id="x12" class="box"></div>
+
+      <div id="x13" class="box"></div>
+      <div id="x14" class="box"></div>
+      <div id="x15" class="box"></div>
+      <div id="x16" class="box"></div>
+    </div>
+
+    <div id='instruc' class='ins' style="display: none;">
+
+      <ul>
+        <h1 id='heading'>How To Play</h1>
+        <li>Start typing: The letters will appear in the boxes</li>
+        <li>Remove letter with Backspace</li>
+        <li>Hit Enter/Return to submit an answer</li>
+        <li>Letter with green background are in the right spot</li>
+        <li>Letter with yellow background exist in the word, but are in the wrong spots</li>
+        <li>Letters with gray backgrounds do not exist in the word</li>
+        <li>if you need a hint, click the ? icon</li>
+      </ul>
+    </div>
+
+    <div class="img">
+      <img id="img">
+    </div>
+
+    <button class="ret" onClick="restart()" id="re">Start Again</button>
+
+    <div id="lose" class="hide"></div>
+    <div id="win" class="hide1"></div>
+    <div id="mydiv" class="hidden"></div>
+    <div id="fo" class="footer">© MHK</div>
+
+    <br>
+    <script src="./wordle.js"></script>
+  </body>
+</html>
